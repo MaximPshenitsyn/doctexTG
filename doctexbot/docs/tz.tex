@@ -1,0 +1,333 @@
+\documentclass[12pt]{article}
+\usepackage{float}
+\usepackage{tempora}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{newtxmath}
+\usepackage{afterpage}
+\usepackage{indentfirst}
+\usepackage[T2A]{fontenc}
+\usepackage{tablefootnote}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage{systeme}
+\hypersetup{
+    colorlinks, citecolor=black,
+    filecolor=black, linkcolor=black, urlcolor=black
+}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm, right=10mm,
+ top=25mm, bottom=15mm,
+ }
+
+\setlength{\columnsep}{1cm}
+\pagestyle{fancy}
+\justifying
+\graphicspath{images}
+
+\newcommand{\header}[1]{\fancyhf{}{}\chead{#1}}
+\newcommand{\footer}{\vspace*{\fill}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+         & & & & \\
+    \hline
+         Изм. & Лист & № докум. & Подп. & Дата \\    
+    \hline
+     RU.17701729.10.03-01 ТЗ 01-1 & & & & \\
+    \hline
+    Инв. № подл. & Подп. и дата & Взам. инв. № & Инв. № дубл. & Подп. и дата \\
+    \hline
+    \end{tabular}
+\end{table}}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}{
+    \textbf{
+        ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+        ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ \\ 
+        ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
+        НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ \\
+        «ВЫСШАЯ ШКОЛА ЭКОНОМИКИ»
+    }
+}
+\end{center}
+\begin{center}
+Факультет компьютерных наук \\
+Образовательная программа «Программная инженерия»
+\end{center}
+
+\begin{minipage}{\textwidth}{
+    \begin{multicols*}{2}{
+        \begin{center}{
+            СОГЛАСОВАНО \\ 
+            Приглашенный преподаватель ФКН ДПИ \\
+            \underline{\hspace{3cm}} Иванов И. И. \\
+            «\underline{\hspace{0.5cm}}»\underline{\hspace{2cm}} 2023 г.
+        }\end{center}
+        \columnbreak
+        \begin{center}{
+            УТВЕРЖДАЮ \\ 
+            Академический руководитель \\ образовательной программы \\ «Программная инженерия» \\ профессор департамента программной инженерии, канд. техн. наук \\
+            \underline{\hspace{3cm}} В. В. Шилов \\ 
+            «\underline{\hspace{0.5cm}}»\underline{\hspace{2cm}} 2023 г.
+        }\end{center}
+    }
+\end{multicols*}
+}
+\end{minipage}
+\\
+
+\hspace*{-2.0cm}
+\begin{minipage}[t][3ex][l]{0.0\textwidth}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \rotatebox{90}{\textbf{Подп. и дата}} &  \\
+        \hline 
+        \rotatebox{90}{\textbf{Инв. № дубл.}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Взам. инв. №}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Подп. и дата}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Инв. № подл}} &  \\
+        \hline
+    \end{tabular}
+\end{table}
+\end{minipage}
+
+
+\begin{center}
+    \textbf{НАЗВАНИЕ ПРОЕКТА}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{Техническое задание}}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{ЛИСТ УТВЕРЖДЕНИЯ}}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{RU.17701729.10.03-01 ТЗ 01-1-ЛУ}}
+\end{center}
+
+\vspace*{\fill}
+\begin{minipage}{\textwidth}
+    \begin{multicols*}{2}{
+    \begin{center}
+    \end{center}
+    \columnbreak
+    \begin{center}{
+        Исполнитель \\ 
+        студент группы БПИ204 \\
+        \underline{\hspace{3cm}} Э. В. Адамян \\ 
+        «\underline{\hspace{0.5cm}}»\underline{\hspace{2cm}} 2022 г.
+    }\end{center}
+}
+\end{multicols*}
+\end{minipage}
+
+\vspace*{\fill}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{Москва 2023}}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+        УТВЕРЖДЕН \\
+RU.17701729.10.03-01 ТЗ 01-1-ЛУ
+\end{center}
+\end{minipage}
+
+\hspace*{-2.0cm}
+\begin{minipage}[t][3ex][l]{0.0\textwidth}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \rotatebox{90}{\textbf{Подп. и дата}} &  \\
+        \hline 
+        \rotatebox{90}{\textbf{Инв. № дубл.}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Взам. инв. №}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Подп. и дата}} &  \\
+        \hline
+        \rotatebox{90}{\textbf{Инв. № подл}} &  \\
+        \hline
+    \end{tabular}
+\end{table}
+\end{minipage}
+
+\vspace*{\fill}
+\begin{center}
+    \textbf{НАЗВАНИЕ ПРОЕКТА}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{Техническое задание}}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{RU.17701729.10.03-01 ТЗ 01-1}}
+\end{center}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{Листов 14}}
+\end{center}
+
+\vspace*{\fill}
+\vspace*{\fill}
+\vspace*{\fill}
+\begin{center}
+    \textbf{\fontsize{14pt}{14pt}\selectfont{Москва 2023}}
+\end{center}
+
+\onehalfspacing
+\newpage
+\header{\thepage \\ RU.17701729.10.03-01 ТЗ 01-1}
+\tableofcontents
+
+\newpage
+\section{Введение}
+\subsection{Наименование программы}
+
+\subsection{Наименование программы на английском}
+
+\subsection{Краткое название программы}
+
+
+\subsection{Краткая характеристика области применения программы}
+
+
+\newpage
+\section{Основания для разработки}
+\subsection{Документы, на основании которых ведется разработка}
+Программа выполняется в рамках темы курсового проекта в соответствии с учебным планом подготовки бакалавров по направлению 09.03.04 «Программная инженерия» Национального исследовательского университета «Высшая школа экономики», факультет компьютерных наук, департамент программной инженерии.
+
+Основанием для разработки является учебный план подготовки бакалавров по направлению 09.03.04 "Программная инженерия" и утвержденная академическим руководителем тема курсового проекта.
+
+\newpage
+\section{Назначение разработки}
+\subsection{Функциональное назначение}
+
+
+\subsection{Эксплуатационное назначение}
+
+
+
+\newpage
+\section{Требования к программе}
+\subsection{Требования к функциональным характеристикам}
+
+
+\subsection{Требования к интерфейсу}
+
+\subsection{Требования к надежности}
+\subsubsection{Требования к обеспечению надежного функционала программы}
+\subsubsection{Время восстановления после отказа}
+\subsubsection{Отказы из-за некорректных действий оператора}
+
+\subsection{Условия эксплуатации}
+\subsubsection{Климатические условия эксплуатации}
+\subsubsection{Требования к видам обслуживания}
+\subsubsection{Требования к численности и квалификации персонала}
+
+\subsection{Требования к составу и параметрам технических средств}
+
+\subsection{Требования к информационной и программной совместимости}
+\subsubsection{Требования к информационным структурам и методам решения}
+\subsubsection{Требования к программным средствам, используемым программой}
+\subsubsection{Требования к исходным кодам и языкам программирования}
+\subsubsection{Требования к защите информации и программы}
+
+\subsection{Требования к маркировке и упаковке}
+
+\subsection{Требования к транспортировке и хранению}
+\subsubsection{Требования к транспортировке и хранению программных документов, предоставляемых в печатном виде}
+
+\subsection{Специальные требования}
+
+\newpage
+\section{Требования к программной документации}
+\subsection{Предварительный состав программной документации}
+\subsection{Специальные требования к программной документации}
+
+\newpage
+\section{Технико-экономические показатели}
+\subsection{Ориентировочная экономическая эффективность}
+\subsection{Предполагаемая потребность}
+\subsection{Экономические преимущества разработки по сравнению с отечественными и зарубежными образцами или аналогами}
+
+\addtocontents{toc}{\protect\newpage}
+\newpage
+\section{Стадии и этапы разработки}
+
+
+\newpage
+\section{Порядок контроля и приемки}
+\subsection{Виды испытаний}
+\subsection{Общие требования к приемке работы}
+
+\newpage
+\section*{Лист регистраций изменений}
+\addcontentsline{toc}{section}{Лист регистраций изменений}
+\begin{table}[h]
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{|p{1cm}|p{2.5cm}|p{2.5cm}|p{1.5cm}|p{3.5cm}|p{2cm}|p{2cm}|p{3cm}|p{1cm}|p{1cm}|} 
+    \hline
+    \multicolumn{10}{|c|}{\fontsize{14pt}{14pt}\selectfont{Лист регистраций изменений}}\\
+    \hline
+    \multicolumn{5}{|c|}{\fontsize{14pt}{14pt}\selectfont{Номера листов (страниц)}} & \multicolumn{5}{|c|}{} \\
+    \hline
+    \fontsize{14pt}{14pt}\selectfont{Изм.} & \fontsize{14pt}{14pt}\selectfont{Измененных} & \fontsize{14pt}{14pt}\selectfont{Замененных} & \fontsize{14pt}{14pt}\selectfont{Новых} & \fontsize{14pt}{14pt}\selectfont{Аннулированных} & \fontsize{14pt}{14pt}\selectfont{Всего листов (страниц в документе)} & \fontsize{14pt}{14pt}\selectfont{№ документа} & \fontsize{14pt}{14pt}\selectfont{Входящий № сопроводительного докум. и дата} & \fontsize{14pt}{14pt}\selectfont{Подп}. & \fontsize{14pt}{14pt}\selectfont{Дата} \\
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+        \rule{0pt}{24pt}
+        & & & & & & & & & \\ 
+    \hline
+    \end{tabular}}
+\end{table}
+\end{document}

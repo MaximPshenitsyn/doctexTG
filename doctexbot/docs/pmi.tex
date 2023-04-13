@@ -1,0 +1,311 @@
+documentclass[12pt]{article}
+usepackage{float}
+usepackage{tempora}
+usepackage{caption}
+usepackage{ragged2e}
+usepackage{multicol}
+usepackage{setspace}
+usepackage{graphicx}
+usepackage{geometry}
+usepackage{fancyhdr}
+usepackage{tabularx}
+usepackage{newtxmath}
+usepackage{afterpage}
+usepackage{indentfirst}
+usepackage[T2A]{fontenc}
+usepackage{tablefootnote}
+usepackage[utf8]{inputenc}
+usepackage[utf8]{inputenc}
+usepackage[russian]{babel}
+usepackage{hyperref}
+usepackage{systeme}
+hypersetup{
+    colorlinks, citecolor=black,
+    filecolor=black, linkcolor=black, urlcolor=black
+}
+ geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm, right=10mm,
+ top=25mm, bottom=30mm,
+ }
+
+setcounter{tocdepth}{4}
+setcounter{secnumdepth}{4}
+setlength{columnsep}{1cm}
+pagestyle{fancy}
+justifying
+graphicspath{images}
+captionsetup{justification=centering}
+addtocounter{page}{-1}
+
+newcommand{header}[1]{fancyhf{}chead{#1}}
+newcommand{footer}{cfoot{
+    begin{tabularx}{textwidth}{lllll}
+    cline{1-5}
+         & & & & 
+    cline{1-5}
+         Изм. & Лист & № докум. & Подп. & Дата     
+    cline{1-5}
+     RU.17701729.10.03-01 51 01-1 & & & & 
+    cline{1-5}
+    Инв. № подл. & Подп. и дата & Взам. инв. № & Инв. № дубл. & Подп. и дата 
+    cline{1-5}
+    end{tabularx}
+}}
+
+begin{document}
+thispagestyle{empty}
+begin{center}{
+    textbf{
+        ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ 
+        ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ  
+        ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ 
+        НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ 
+        «ВЫСШАЯ ШКОЛА ЭКОНОМИКИ»
+    }
+}
+end{center}
+begin{center}
+Факультет компьютерных наук 
+Образовательная программа «Программная инженерия»
+end{center}
+
+begin{minipage}{textwidth}{
+    begin{multicols}{2}{
+        begin{center}{
+            СОГЛАСОВАНО  
+            Приглашенный преподаватель ФКН ДПИ 
+            underline{hspace{3cm}} Иванов И. И. 
+            «underline{hspace{0.5cm}}»underline{hspace{2cm}} 2023 г.
+        }end{center}
+        columnbreak
+        begin{center}{
+            УТВЕРЖДАЮ  
+            Академический руководитель  образовательной программы  «Программная инженерия»  профессор департамента программной инженерии, канд. техн. наук 
+            underline{hspace{3cm}} В. В. Шилов  
+            «underline{hspace{0.5cm}}»underline{hspace{2cm}} 2023 г.
+        }end{center}
+    }
+end{multicols}
+}
+end{minipage}
+
+
+hspace{-2.0cm}
+begin{minipage}[t][3ex][l]{0.0textwidth}
+    begin{table}[H]
+    centering
+    begin{tabular}{cc}
+        hline
+        rotatebox{90}{textbf{Подп. и дата}} &  
+        hline 
+        rotatebox{90}{textbf{Инв. № дубл.}} &  
+        hline
+        rotatebox{90}{textbf{Взам. инв. №}} &  
+        hline
+        rotatebox{90}{textbf{Подп. и дата}} &  
+        hline
+        rotatebox{90}{textbf{Инв. № подл}} &  
+        hline
+    end{tabular}
+end{table}
+end{minipage}
+
+
+begin{center}
+    textbf{НАЗВАНИЕ ПРОЕКТА}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{Программа и методика испытаний}}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{ЛИСТ УТВЕРЖДЕНИЯ}}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{RU.17701729.10.03-01 51 01-1-ЛУ}}
+end{center}
+
+vspace{fill}
+begin{minipage}{textwidth}
+    begin{multicols}{2}{
+    begin{center}
+    end{center}
+    columnbreak
+    begin{center}{
+        Исполнитель  
+        студент группы БПИ204 
+        underline{hspace{3cm}} Э. В. Адамян  
+        «underline{hspace{0.5cm}}»underline{hspace{2cm}} 2023 г.
+    }end{center}
+}
+end{multicols}
+end{minipage}
+
+vspace{fill}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{Москва 2023}}
+end{center}
+
+newpage
+thispagestyle{empty}
+begin{minipage}{0.5textwidth}
+begin{center}
+        УТВЕРЖДЕН 
+RU.17701729.10.03-01 51 01-1-ЛУ 
+end{center}
+end{minipage}
+
+hspace{-2.0cm}
+begin{minipage}[t][3ex][l]{0.0textwidth}
+    begin{table}[H]
+    centering
+    begin{tabular}{cc}
+        hline
+        rotatebox{90}{textbf{Подп. и дата}} &  
+        hline 
+        rotatebox{90}{textbf{Инв. № дубл.}} &  
+        hline
+        rotatebox{90}{textbf{Взам. инв. №}} &  
+        hline
+        rotatebox{90}{textbf{Подп. и дата}} &  
+        hline
+        rotatebox{90}{textbf{Инв. № подл}} &  
+        hline
+    end{tabular}
+end{table}
+end{minipage}
+
+vspace{fill}
+begin{center}
+    textbf{НАЗВАНИЕ ПРОЕКТА}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{Программа и методика испытаний}}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{RU.17701729.10.03-01 51 01-1}}
+end{center}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{Листов 9}}
+end{center}
+
+vspace{fill}
+vspace{fill}
+vspace{fill}
+begin{center}
+    textbf{fontsize{14pt}{14pt}selectfont{Москва 2022}}
+end{center}
+
+onehalfspacing
+newpage
+header{thepage  RU.17701729.10.03-01 51 01-1}
+footer
+tableofcontents
+
+
+newpage
+section{Объекты испытаний}
+subsection{Наименование}
+
+subsection{Область применения}
+
+subsection{Обозначение испытуемой программы}
+
+
+newpage
+section{Цель испытаний}
+
+
+
+newpage
+section{Требования к программе}
+subsection{Требования к функциональным характеристикам}
+subsubsection{Состав выполняемых функций}
+
+subsubsection{Организация входных и выходных данных}
+
+subsection{Требования к интерфейсу}
+
+subsection{Требования к надежности}
+subsubsection{Требования к обеспечению надежного (устойчивого) функционирования программы}
+
+subsubsection{Время восстановления после отказа}
+
+subsubsection{Отказы из-за некорректных действий оператора}
+
+newpage
+section{Требование к программной документации}
+subsection{Состав программной документации}
+
+subsection{Специальные требования к программной документации}
+
+newpage
+section{Средства и порядок испытаний}
+subsection{Технические средства, используемые во время испытаний}
+
+subsection{Программные средства, используемые во время испытаний}
+
+subsection{Порядок проведения испытаний}
+
+newpage
+section{Методы испытаний}
+subsection{Испытание выполнения требований программной документации}
+
+subsection{Запуск приложения}
+
+subsection{Испытание выполнения требований к функциональным характеристикам}
+subsubsection{Проверка выполнения требований к функциональным характеристикам с помощью взаимодействия с пользователем}
+
+newpage
+section{Лист регистраций изменений}
+addcontentsline{toc}{section}{Лист регистраций изменений}
+begin{table}[h]
+    resizebox{textwidth}{!}{
+    begin{tabular}{p{1cm}p{2.5cm}p{2.5cm}p{1.5cm}p{3.5cm}p{2cm}p{2cm}p{3cm}p{1cm}p{1cm}} 
+    hline
+    multicolumn{10}{c}{fontsize{14pt}{14pt}selectfont{Лист регистраций изменений}}
+    hline
+    multicolumn{5}{c}{fontsize{14pt}{14pt}selectfont{Номера листов (страниц)}} & & & & & 
+    cline{1-5}
+    fontsize{14pt}{14pt}selectfont{Изм.} & fontsize{14pt}{14pt}selectfont{Измененных} & fontsize{14pt}{14pt}selectfont{Замененных} & fontsize{14pt}{14pt}selectfont{Новых} & fontsize{14pt}{14pt}selectfont{Аннулированных} & fontsize{14pt}{14pt}selectfont{Всего листов (страниц в документе)} & fontsize{14pt}{14pt}selectfont{№ документа} & fontsize{14pt}{14pt}selectfont{Входящий № сопроводительного докум. и дата} & fontsize{14pt}{14pt}selectfont{Подп}. & fontsize{14pt}{14pt}selectfont{Дата} 
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+        rule{0pt}{24pt}
+        & & & & & & & & &  
+    hline
+    end{tabular}}
+end{table}
+end{document}
